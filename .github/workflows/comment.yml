@@ -1,4 +1,5 @@
 name: Comment
+# test.ymlのCI実行テスト
 on: pull_request
 jobs:
   comment:
