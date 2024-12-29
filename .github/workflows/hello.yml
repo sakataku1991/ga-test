@@ -1,0 +1,18 @@
+# このワークフローの名前
+name: Hello
+
+# このワークフローの実行の起点（トリガー）となるイベントの設定
+on: push
+
+# 「ジョブ」の定義
+jobs:
+  # ジョブID
+  hello:
+    # ジョブのランナー（今回は `Ubuntu` で実行）
+    runs-on: ubuntu-latest
+    # 「ステップ」の定義
+    steps:
+      # シェルコマンドの実行
+      - run: echo "Hello, world"
+      # アクションの呼び出し
+      - uses: actions/checkout@v4
